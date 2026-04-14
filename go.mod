@@ -1,4 +1,4 @@
-module github.com/observatorium/observatorium
+module github.com/rhobs/observatorium
 
 go 1.23.0
 
