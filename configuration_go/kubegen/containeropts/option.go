@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/observatorium/observatorium/configuration_go/kubegen/helpers"
-	"github.com/observatorium/observatorium/configuration_go/kubegen/workload"
+	"github.com/rhobs/observatorium/configuration_go/kubegen/helpers"
+	"github.com/rhobs/observatorium/configuration_go/kubegen/workload"
 	corev1 "k8s.io/api/core/v1"
 )
 

@@ -3,8 +3,8 @@ package api
 import (
 	"fmt"
 
-	kghelpers "github.com/observatorium/observatorium/configuration_go/kubegen/helpers"
-	"github.com/observatorium/observatorium/configuration_go/kubegen/workload"
+	kghelpers "github.com/rhobs/observatorium/configuration_go/kubegen/helpers"
+	"github.com/rhobs/observatorium/configuration_go/kubegen/workload"
 	monv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"

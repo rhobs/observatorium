@@ -3,11 +3,11 @@ package ruler
 import (
 	"net"
 
-	"github.com/observatorium/observatorium/configuration_go/kubegen/cmdopt"
-	"github.com/observatorium/observatorium/configuration_go/kubegen/containeropts"
-	kghelpers "github.com/observatorium/observatorium/configuration_go/kubegen/helpers"
-	"github.com/observatorium/observatorium/configuration_go/kubegen/workload"
-	"github.com/observatorium/observatorium/configuration_go/schemas/thanos/objstore"
+	"github.com/rhobs/observatorium/configuration_go/kubegen/cmdopt"
+	"github.com/rhobs/observatorium/configuration_go/kubegen/containeropts"
+	kghelpers "github.com/rhobs/observatorium/configuration_go/kubegen/helpers"
+	"github.com/rhobs/observatorium/configuration_go/kubegen/workload"
+	"github.com/rhobs/observatorium/configuration_go/schemas/thanos/objstore"
 	monv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
