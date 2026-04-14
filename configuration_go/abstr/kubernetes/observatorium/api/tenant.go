@@ -8,7 +8,12 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-// Taken from https://github.com/observatorium/api/blob/ce3e8a59e994ad2798c218a432afd37213ed8459/main.go#L199
+// Taken from https://github.com/rhobs/api/blob/d2e2a61a367a28b5a9ec5cbe1ff080121f813e1e/main.go
+
+type PathPattern struct {
+	Operator string `yaml:"operator,omitempty"`
+	Pattern  string `yaml:"pattern,omitempty"`
+}
 
 type Tenants struct {
 	Tenants []Tenant `yaml:"tenants"`
@@ -34,14 +39,15 @@ type Tenant struct {
 }
 
 type TenantOIDC struct {
-	ClientID      string `yaml:"clientID"`
-	ClientSecret  string `yaml:"clientSecret"`
-	GroupClaim    string `yaml:"groupClaim,omitempty"`
-	IssuerRawCA   []byte `yaml:"issuerCA,omitempty"`
-	IssuerCAPath  string `yaml:"issuerCAPath,omitempty"`
-	IssuerURL     string `yaml:"issuerURL,omitempty"`
-	RedirectURL   string `yaml:"redirectURL,omitempty"`
-	UsernameClaim string `yaml:"usernameClaim,omitempty"`
+	ClientID      string        `yaml:"clientID"`
+	ClientSecret  string        `yaml:"clientSecret"`
+	GroupClaim    string        `yaml:"groupClaim,omitempty"`
+	IssuerRawCA   []byte        `yaml:"issuerCA,omitempty"`
+	IssuerCAPath  string        `yaml:"issuerCAPath,omitempty"`
+	IssuerURL     string        `yaml:"issuerURL,omitempty"`
+	RedirectURL   string        `yaml:"redirectURL,omitempty"`
+	UsernameClaim string        `yaml:"usernameClaim,omitempty"`
+	Paths         []PathPattern `yaml:"paths,omitempty"`
 }
 
 type TenantOpenShift struct {
@@ -57,8 +63,9 @@ type TenantAuthenticator struct {
 }
 
 type TenantMTLS struct {
-	RawCA  []byte `yaml:"ca"`
-	CAPath string `yaml:"caPath"`
+	RawCA  []byte        `yaml:"ca"`
+	CAPath string        `yaml:"caPath"`
+	Paths  []PathPattern `yaml:"paths,omitempty"`
 }
 
 type TenantOPA struct {
