@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/observatorium/observatorium/configuration_go/schemas/thanos/cache/memcached"
-	"github.com/observatorium/observatorium/configuration_go/schemas/thanos/cache/memory"
-	"github.com/observatorium/observatorium/configuration_go/schemas/thanos/cache/redis"
+	"github.com/rhobs/observatorium/configuration_go/schemas/thanos/cache/memcached"
+	"github.com/rhobs/observatorium/configuration_go/schemas/thanos/cache/memory"
+	"github.com/rhobs/observatorium/configuration_go/schemas/thanos/cache/redis"
 	"gopkg.in/yaml.v2"
 )
 

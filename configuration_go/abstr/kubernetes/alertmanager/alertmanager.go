@@ -7,12 +7,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/observatorium/observatorium/configuration_go/kubegen/cmdopt"
-	kghelpers "github.com/observatorium/observatorium/configuration_go/kubegen/helpers"
+	"github.com/rhobs/observatorium/configuration_go/kubegen/cmdopt"
+	kghelpers "github.com/rhobs/observatorium/configuration_go/kubegen/helpers"
 
-	"github.com/observatorium/observatorium/configuration_go/kubegen/containeropts"
-	"github.com/observatorium/observatorium/configuration_go/kubegen/workload"
-	"github.com/observatorium/observatorium/configuration_go/schemas/log"
+	"github.com/rhobs/observatorium/configuration_go/kubegen/containeropts"
+	"github.com/rhobs/observatorium/configuration_go/kubegen/workload"
+	"github.com/rhobs/observatorium/configuration_go/schemas/log"
 	monv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
